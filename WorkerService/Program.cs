@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WorkerService.Utilites;
 
 namespace WorkerService
 {
@@ -20,6 +21,9 @@ namespace WorkerService
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.AddHostedService<Worker>();
+
+                    //dependency inject here
+                    services.AddSingleton<IHelperService, HelperService>();
                 });
     }
 }
