@@ -80,6 +80,8 @@ now modified total program.cs file
    ```
 12. open windows service and find out your service and run to start.
 13. Now it's working done
+14. If you want this service open cmd with administrator and run below this command
+    ```SC DELETE shortservicename```
 
 
 
